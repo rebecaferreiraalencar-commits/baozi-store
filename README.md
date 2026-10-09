@@ -6,7 +6,7 @@ API REST simples para controle de clientes, produtos e pedidos da Baozi Store (p
 
 ## Como rodar
 1. Tenha o **MySQL** rodando em `localhost:3306`.
-2. Em `src/main/resources/application.properties`, troque `SUA_SENHA_AQUI` pela senha do seu MySQL (o banco `baozi_store` e criado sozinho).
+2. Em `src/main/resources/application.properties`, adicione a linha `spring.datasource.password=SUA_SENHA` com a senha do seu MySQL, ou defina a variavel de ambiente `SPRING_DATASOURCE_PASSWORD`. O banco `baozi_store` e criado sozinho.
 3. Execute: `mvn spring-boot:run` (ou rode a classe `BaoziStoreApplication` na IDE).
 4. A API sobe em `http://localhost:8080`.
 
